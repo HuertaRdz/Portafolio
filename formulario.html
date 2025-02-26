@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formularios en HTML</title>
+</head>
+<body>
+	<h1>Registros de Usuarios</h1>
+	<form action="" method="post" enctype="text/plain">
+		<fieldset>
+			<legend>Datos del usuario</legend>
+			<label for="usuario">Nombre de usuario:</label>
+			
+			<input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" size="25" maxlength="30" title="Nombre de usuario" required> </br>
+
+			<label for="pass">Contraseña:</label>
+			<input type="password" name="pass" id="pass" size="20" maxlength="20" placeholder="Contraseña">
+
+			<label for="sugerencia">Sugerencias o quejas: </label>
+			<textarea name="sugerencia" id="sugerencia" rows="5" cols="30" ></textarea>
+
+			<label for="correo">E-mail: </label>
+			<input type="email" name="correo" id="correo"></br>
+			<input type="submit" name="enviar" id="enviar" value="Enviar datos">
+		</fieldset>
+	</form>
+</body>
+</html>
