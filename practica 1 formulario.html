@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Formulario</title>
 </head>
-<body>
+<body style="background-color: aliceblue;">
 	<h1 style="text-align: center;">Volkswagen Potosina</h1>
 	<h2 style="text-align: center;">Compras online</h2>
 
@@ -19,7 +19,7 @@
 			<input type="text" name="pat" id="pat" placeholder="Apelido paterno" size="30" maxlength="30" title="Apelido paterno" required>
 
 			<label for="mat">Apellido materno:</label>
-			<input type="text" name="mat" id="mat" placeholder="Apelido materno" size="30" maxlength="30" title="Apelido materno" required></br>
+			<input type="text" name="mat" id="mat" placeholder="Apelido materno" size="30" maxlength="30" title="Apelido materno" required></br></br>
 
 			<label for="usuario">Nombre de usuario:</label>
 			<input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" size="30" title="Nombre de usuario" required>
@@ -28,17 +28,33 @@
 			<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" size="30" title="Contraseña" required>
 
 			<label for="fecha">Fecha de registro:</label>
-			<input type="date" name="fecha" id="fecha"></br>
+			<input type="date" name="fecha" id="fecha">
 		</fieldset>
 
 		<fieldset>
 			<legend>Datos para Facturar</legend>
-			<label>País:</label>
+			<label for="paises">País: </label>
+			<select name="paises" id="paises" size="3">
+				<option>México</option>
+				<option>Canadá</option>
+				<option>Reino Unido</option>
+				<option>Japón</option>
+				<option>Alemania</option>
+				<option>Luxemburgo</option>
+			</select>
 
-			<label>Ciudad:</label>
+			<label for="c">Ciudad: </label>
+			<select name="c" id="c" size="3">
+				<option>San Luis Potosí</option>
+				<option>Monterrey</option>
+				<option>C.d. Valles</option>
+				<option>Toronto</option>
+				<option>Tokyo</option>
+				<option>Berlín</option>
+			</select>
 
 			<label for="ca">Calle:</label>
-			<input type="text" name="ca" id="ca" placeholder="Calle" size="30" maxlength="30" title="Calle" required></br>
+			<input type="text" name="ca" id="ca" placeholder="Calle" size="30" maxlength="30" title="Calle" required></br></br>
 
 			<label for="ncasa">Número de casa:</label>
 			<input type="number" name="ncasa" id="ncasa" placeholder="Número de casa">
@@ -47,7 +63,7 @@
 			<input type="text" name="col" id="col" placeholder="Colonia" size="30" maxlength="30" title="Colonia" required>
 
 			<label for="correo">E-mail:</label>
-			<input type="email" name="correo" id="correo" placeholder="E-mail"></br>
+			<input type="email" name="correo" id="correo" placeholder="E-mail"></br></br>
 
 			<label for="rfc">R.F.C.</label>
 			<input type="text" name="rfc" id="rfc" placeholder="R.F.C." size="30" maxlength="13" title="R.F.C." required>
@@ -56,8 +72,12 @@
 			<input type="number" name="cp" id="cp" placeholder="Código Postal">
 
 			<input type="checkbox" name="r" id="r" value="1">
-			<label>Acepto términos y condiciones</label>
+			<label>Acepto términos y condiciones</label></br></br>
+
+			<input type="submit" name="enviar" id="enviar" value="enviar datos">
 		</fieldset>
-	</form>
+	</form></br></br>
+
+	<footer style="text-align:right;"><b>Marzo 2025, SLP.</b></footer>
 </body>
 </html>
