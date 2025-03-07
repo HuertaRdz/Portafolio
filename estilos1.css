@@ -1,0 +1,33 @@
+body{
+	background-color: powderblue;
+}
+table{
+	width: 100%;
+	border: 1px solid aliceblue;
+	border-collapse: collapse;
+	font-family: arial, verdana, sans-serif;
+	caption-side: top;
+	margin: auto;
+}
+th, td{
+	border: 1px solid aliceblue;
+}
+th{
+	padding: 15px;
+	background-color: cadetblue;
+	color: aliceblue;
+}
+td{
+	padding: 5px;
+	text-align: justify;
+}
+table tr:nth-child(odd){
+	background-color: steelblue;
+}
+table tr:nth-child(even){
+	background-color: lightblue;
+}
+table tr:hover{
+	background-color: royalblue;
+	color: white;
+}
