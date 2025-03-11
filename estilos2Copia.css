@@ -1,0 +1,50 @@
+ul{
+	list-style-type: none;
+	width: 20%;
+	background-color: #D3A781;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	position: fixed;
+}
+li a{
+	display: block;
+	background-color: #D3A781;
+	padding: 12px;
+	text-decoration: none;
+}
+
+li a:hover{
+	background-color: #C08B61;
+	color: #EED3BE;
+}
+
+li a.activo{
+	background-color: #BE6929;
+	color: #FDDBC1;
+	font-family: 'fuente1';
+}
+li a:hover:not(.activo){
+	background-color: #C08B61;
+	color: #EED3BE;
+}
+.capa1{
+	margin-left: 25%;
+	padding: 12px;
+}
+@font-face{
+	font-family: "fuente1";
+	src: url("static/") format("truetype");
+}
+p{
+	text-align: justify;
+	font-family: 'fuente1';
+}
+h1{
+	font-family: "Dancing Script", cursive;
+	font-size: 24px;
+}
+h2{
+	font-family: "Imbue", serif;
+	font-size: 22px;
+}
