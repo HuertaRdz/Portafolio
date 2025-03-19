@@ -1,0 +1,48 @@
+.columnas{
+	text-align: justify;
+	column-count: 3; /*numero de columnas*/
+	column-gap: 20px; /*espacio entre columnas*/
+	column-rule-style: solid; /*Estilo de linea*/
+	column-rule-color: #ADB2D4;/*Define el color de la linea*/
+	column-rule-width: 2px; /*Ancho de la linea*/
+	column-width: 150px; /*Ancho de las colummnas*/
+	columns: 200px 4; /*Ancho y numero de columnas. Cancela al primero*/
+}
+
+.titulo{
+	column-span: all;
+	color: #ADB2D4;
+	text-align: center;
+}
+
+.texto1{
+	visibility: visible;
+	background-color: #C7D9DD;
+}
+
+
+.texto2{
+	visibility: hidden;
+	background-color: #C7D9DD;
+}
+
+button{
+	background-color: #D5E5D5;
+	padding: 2px;
+	border-color: #C7D9DD;
+}
+
+button:hover{
+	cursor: pointer;
+	background-color: #C7D9DD;
+	padding: 2px;
+	border-color: #D5E5D5;
+}
+
+p{
+	text-align: justify;
+}
+
+body{
+	background-color: #EEF1DA;
+}
