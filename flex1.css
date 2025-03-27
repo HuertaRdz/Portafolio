@@ -1,0 +1,31 @@
+.flex-container{
+	display: flex; /*Caja flexible*/
+	height: 500px;
+	/*flex-direction: row; estos 2 valores se resumencon flow flew-wrap: nowrap*/
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
+	background-color: #ACD3A8;
+}
+
+.flex-container div{
+	background: lightblue;
+	margin: 12px;
+	widows: 150px;
+	padding: 12px;
+	text-align: center;
+}
+
+body{
+	background-color: #F2FFE7;
+}
+
+@media(max-width: 500px){
+	.flex-container{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+div{
+	color: cadetblue;
+}
