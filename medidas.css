@@ -1,0 +1,109 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            background-color: #f8f9fa;
+            padding: 0.5rem;
+            border-left: 4px solid #3498db;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .box {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* Ejemplos de unidades absolutas */
+        .absolutas .pixel-box {
+            width: 200px;
+            height: 100px;
+            background-color: #e74c3c;
+        }
+        
+        .absolutas .inch-box {
+            width: 2in;
+            height: 1in;
+            background-color: #3498db;
+        }
+        
+        .absolutas .cm-box {
+            width: 5cm;
+            height: 2cm;
+            background-color: #2ecc71;
+        }
+        
+        /* Ejemplos de unidades relativas */
+        .relativas .em-box {
+            font-size: 1.2em;
+            padding: 1em;
+            background-color: #f39c12;
+        }
+        
+        .relativas .rem-box {
+            font-size: 1.2rem;
+            padding: 1rem;
+            background-color: #9b59b6;
+        }
+        
+        .relativas .percent-box {
+            width: 50%;
+            height: 100px;
+            background-color: #1abc9c;
+        }
+        
+        .relativas .viewport-box {
+            width: 50vw;
+            height: 20vh;
+            background-color: #e67e22;
+            margin-bottom: 1rem;
+        }
+        
+        /* Ejemplo de tipografía responsive */
+        .typography-example {
+            font-size: calc(1rem + 0.5vw);
+            line-height: calc(1.4em + 0.5vw);
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border-left: 4px solid #2ecc71;
+            background-color: #f8f9fa;
+        }

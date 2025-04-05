@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Práctica 9</title>
+	<link rel="stylesheet" type="text/css" href="medidas.css">
+</head>
+<body>
+	<h1>Unidades de Medida en CSS</h1>
+    
+    <section class="absolutas">
+        <h2>Unidades Absolutas</h2>
+        <p>Las unidades absolutas tienen un tamaño fijo que no cambia en relación con otros elementos.</p>
+        
+        <div class="container">
+            <div class="box">
+                <h3>Píxeles (px)</h3>
+                <p>200px × 100px</p>
+                <div class="pixel-box"></div>
+                <p>1px = 1/96 de pulgada. Ideal para bordes y sombras.</p>
+            </div>
+            
+            <div class="box">
+                <h3>Pulgadas (in)</h3>
+                <p>2in × 1in</p>
+                <div class="inch-box"></div>
+                <p>1in = 2.54cm. Usado principalmente para medios impresos.</p>
+            </div>
+            
+            <div class="box">
+                <h3>Centímetros (cm)</h3>
+                <p>5cm × 2cm</p>
+                <div class="cm-box"></div>
+                <p>Basado en el sistema métrico. Útil para diseños de impresión.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="relativas">
+        <h2>Unidades Relativas</h2>
+        <p>Las unidades relativas dependen del contexto (elemento padre o viewport).</p>
+        
+        <div class="container">
+            <div class="box">
+                <h3>em</h3>
+                <p>Relativo al font-size del elemento padre.</p>
+                <div class="em-box">
+                    
+                    <div style="font-size: 0.8em;"> </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <h3>rem</h3>
+                <p>Relativo al font-size del elemento raíz (html).</p>
+                <div class="rem-box">
+                    
+                    <div style="font-size: 0.8rem;"> </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <h3>Porcentaje (%)</h3>
+                <p>50% del ancho del contenedor padre.</p>
+                <div class="percent-box"></div>
+                <p>Útil para crear diseños fluidos.</p>
+            </div>
+            
+            <div class="box">
+                <h3>Viewport (vw/vh)</h3>
+                <p>50vw × 20vh</p>
+                <div class="viewport-box"></div>
+                <p>1vw = 1% del ancho del viewport. 1vh = 1% del alto.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Recomendaciones de Uso</h2>
+        <div class="container">
+            <div class="box">
+                <h3>Cuándo usar unidades absolutas</h3>
+                <ul>
+                    <li>Bordes y sombras (px)</li>
+                    <li>Diseños para impresión (in, cm, mm, pt)</li>
+                    <li>Cuando se necesita precisión absoluta</li>
+                    <li>Elementos que no deben escalar</li>
+                </ul>
+            </div>
+            
+            <div class="box">
+                <h3>Cuándo usar unidades relativas</h3>
+                <ul>
+                    <li>Diseños responsive (rem, vw, vh, %)</li>
+                    <li>Tamaños de texto (rem para escalado consistente)</li>
+                    <li>Espaciado entre elementos (em, rem)</li>
+                    <li>Diseños fluidos y flexibles</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
