@@ -1,0 +1,112 @@
+/*Configuración básica*/
+body {
+    font-family: sans-serif;
+    color: #333; 
+}
+*{
+    margin: 0px;
+    padding: 0%;
+    z-index: 2;
+}
+.container {
+    position: relative;
+    text-align: center;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: black;
+}
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/*Cosas de la barra superior*/
+.barra-superior{
+    display: flex;
+    background-color: rgb(37, 68, 104);
+    position: fixed;
+    padding: 2% 1%;
+    margin: 2%;
+    width: 94%;
+    max-width: 94%;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 300px;
+    z-index: 3;
+}
+.flex-menu{
+    display: flex;
+    justify-content: flex-end;
+}
+.flex-menu a{
+    text-decoration: none;
+    margin-right: 6.5vw;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+/*Terminan cosas de la barra superior*/
+
+/*Partes. Index (pero puede usarse en otras secciones)*/
+.parte1{
+    position: relative;
+}
+.parte2{
+    position: relative;
+}
+footer{
+    background-color: rgb(37, 68, 104);
+    color: aliceblue;
+    text-align: center;
+    height: 20vh;
+}
+
+.background-image {
+    position: relative;
+    width: 100%; /* Ajusta el ancho de la imagen */
+    height: auto;
+    display: block;
+    z-index: 0;
+}
+
+/*Título Index*/
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Ajusta el ancho del contenido */
+    color: black; 
+    text-align: right;
+}
+.quote {
+    font-size: 1.5em;  
+}
+
+/*Cuadros verdes. Usar ID para la posición de cada uno*/
+.mission {
+    position: absolute;
+    background-color: #a8e0a8; 
+    padding: 20px;
+    border-radius: 10px; 
+    font-family: sans-serif; 
+    line-height: 1.6; 
+}
+.mission h2, p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#cuadroIndex1{
+    left: 10vw;
+    top: 10vh;
+    width: 30%;
+    max-height: 90%;
+}
+
+
+/*Mapa del index*/
+.mapa{
+    align-items: center;
+}
