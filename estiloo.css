@@ -38,3 +38,7 @@ h1, h2{
 	height: 20px;
 	cursor: pointer;
 }
+
+#mostrar:hover ~ .galeria{
+	display: none;
+}
