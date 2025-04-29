@@ -1,0 +1,10 @@
+.suma{
+	background-color: #ACD3A8;
+	color: #8AB2A6;
+	border-color: #8AB2A6;
+}
+.suma:hover{
+	background-color: #8AB2A6;
+	color: #ACD3A8;
+	border-color: #ACD3A8;
+}
