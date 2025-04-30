@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Obtener datos desde formulario con JavaScript</title>
+	<script type="text/javascript" src="practica32.js"></script>
+	<link rel="stylesheet" type="text/css" href="practica32.css">
+</head>
+<body>
+	<h1>Registro de formulario</h1>
+	<div class="f"></br></br>
+		<form name="formulario">
+			<label for="user">Nombre de usuario:</label>
+			<input type="text" name="user" id="user" placeholder="Nombre de usuario"></br></br>
+			<label for="pass">Contraseña:</label>
+			<input type="password" name="pass" id="pass" placeholder="Contraseña"></br></br>
+			<select name="carrera" id="carrera">
+			<option value="ITI">Ing. en Tecnologías de la Información</option>
+			<option value="ITEM">Ing. Telemática</option>
+			</select></br></br>
+			<label for="genero">Género:</label></br>
+			<input type="radio" name="genero" id="genero" value="m">Masculino</br>
+			<input type="radio" name="genero" id="genero" value="f">Femenino</br></br>
+			<input type="checkbox" name="privacidad" id="privacidad">
+			<label for="privacidad">Acepto los términos y condiciones de usp y privacidad</label></br>
+			<input type="button" name="envio" id="envio" value="Obtener datos" onclick="leer()"></br></br>
+		</form> </br></br>
+	</div>
+	
+	<div id="datos" class="datos"></div>
+</body>
+</html>
