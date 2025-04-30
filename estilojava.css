@@ -1,0 +1,41 @@
+body{
+	background-color: #F8F8E1;
+}
+input[type=button]{
+	background-color: #FFC1DA;
+	color: #FF90BB;
+	border-color: #FF90BB;
+	border-radius: 20px;
+	border-spacing: 10px;
+	letter-spacing: 5px;
+}
+
+.pa{
+	display: grid;
+	place-items: center;
+	background-color: #8ACCD5;
+	border-radius: 30px;
+}
+
+
+.po{
+	text-align: center;
+}
+input[type=button]:hover{
+	background-color: #FF90BB;
+	color: #FFC1DA;
+	border-color: #FFC1DA;
+	border-radius: 20px;
+	border-spacing: 10px;
+	letter-spacing: 5px;
+}
+
+h1, h2{
+	color: #8ACCD5;
+	text-align: center;
+}
+
+p{
+	color: #FF90BB;
+	text-align: center;
+}
