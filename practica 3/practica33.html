@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eve Harapeco</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="jspdf/js/jquery/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="jspdf/js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+        <script type="text/javascript" src="jspdf/jspdf.js"></script>
+        <script type="text/javascript" src="jspdf/jspdf.plugin.addimage.js"></script>
+        <script type="text/javascript" src="jspdf/jspdf.plugin.standard_fonts_metrics.js"></script>
+        <script type="text/javascript" src="jspdf/jspdf.plugin.split_text_to_size.js"></script>
+        <script type="text/javascript" src="jspdf/jspdf.plugin.from_html.js"></script>
+    <script src="practica33.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+
+        // Load the Visualization API and the corechart package.
+        google.charts.load('current', {'packages':['corechart']});
+
+        // Set a callback to run when the Google Visualization API is loaded.
+        //google.charts.setOnLoadCallback(drawChart);
+
+        // Callback that creates and populates a data table,
+        // instantiates the pie chart, passes in the data and
+        // draws it.
+
+        </script>
+   <link rel="stylesheet" type="text/css" href="practica33.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Cuánto sabes sobre Eve Harapeco</h1>
+        <p>Responde las siguientes preguntas para evaluar tus conocimientos sobre el artista Eve</p>
+        
+        <form id="diagnosticForm">
+            <div class="question">
+                <h3>1. ¿Cuándo es su cumpleaños?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q1" id="q1a" value="a">
+                        <label for="q1a">25 de septiembre</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" id="q1b" value="b">
+                        <label for="q1b">23 de mayo</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" id="q1c" value="c">
+                        <label for="q1c">3 de abril</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <h3>2. ¿Cuál es su nacionalidad?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q2" id="q2a" value="a">
+                        <label for="q2a">ruso</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" id="q2b" value="b">
+                        <label for="q2b">tailandés</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" id="q2c" value="c">
+                        <label for="q2c">japonés</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <h3>3. ¿Cuál es su primer mini álbum?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q3" id="q3a" value="a">
+                        <label for="q3a">OFFICIAL NUMBER</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" id="q3b" value="b">
+                        <label for="q3b">Wonder Word</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" id="q3c" value="c">
+                        <label for="q3c">Otogi</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <h3>4. ¿Cuál es su animal favorito?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q4" id="q4a" value="a">
+                        <label for="q4a">La ballena</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" id="q4b" value="b">
+                        <label for="q4b">El zorro</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" id="q4c" value="c">
+                        <label for="q4c">Los cuervos</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <h3>5. ¿Cuál es su comida favorita?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q5" id="q5a" value="a">
+                        <label for="q5a">Kurnik</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" id="q5b" value="b">
+                        <label for="q5b">Sushi</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" id="q5c" value="c">
+                        <label for="q5c">Kai Jeow</label>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="button" id="submitBtn">Obtener resultados</button>
+        </form>
+    </div>
+    
+    <div class="results" id="results">
+        <h2>Resultados del Cuestionario</h2>
+        <div class="score" id="score"></div>
+
+        <div class="chart-container">
+            <canvas id="resultsChart"></canvas>
+        </div>
+        
+        <div class="feedback" id="feedback"></div>
+        
+        <button type="button" id="downloadPdf">Descargar PDF con resultados</button>
+    </div>
+</body>
+</html>
