@@ -1,0 +1,37 @@
+body{
+	background-color: #F2EFE7;
+}
+
+h1{
+	color: #006A71;
+	text-align: center;
+}
+
+.s{
+	background-color: #9ACBD0;
+	border-radius: 30px;
+	display: grid;
+	place-items: center;
+}
+
+input[type=button]{
+	background-color: #9ACBD0;
+	border-color: #48A6A7;
+	color: #48A6A7;
+	border-radius: 20px;
+}
+
+input[type=button]:hover{
+	background-color: #48A6A7;
+	border-color: #006A71;
+	color: #006A71;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.tot{
+	background-color: #9ACBD0;
+	border-color: #48A6A7;
+	color: #48A6A7;
+	border-radius: 20px;
+}
