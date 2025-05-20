@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Evaluación práctica Parcial 3</title>
+	<link rel="stylesheet" type="text/css" href="evaluacion.css">
+	<script type="text/javascript" src="evaluacion.js"></script>
+
+</head>
+<body>
+	<h1>Pago de Estacionamiento</h1>
+	<div class="s">
+		<form id="forms">
+			<label for="tiempo">Tiempo de estancia:</label>
+			<input type="number" name="tiempo" id="tiempo" placeholder="Ingrese su tiempo de estancia"></br></br></br>
+			<label for="tipo">Tipo de auto:</label>
+			<select>
+				<option value="chico">auto chico</option>
+				<option value="camioneta">camioneta</option>
+				<option value="camion">camión</option>
+			</select></br></br></br></br>
+			<input type="button" name="sum" id="sum" value="Calcular el total a pagar" onclick="leer()"></br></br>
+		</form>
+	</div></br></br></br></br>
+	<div id="tot" class="tot">
+		
+	</div>
+</body>
+</html>
